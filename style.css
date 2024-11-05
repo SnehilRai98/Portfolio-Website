@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+DE+Grund&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+DE+Grund&display=swap");
 
 * {
   margin: 0;
@@ -40,7 +40,6 @@ nav {
 }
 
 .nav-links {
-
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
@@ -80,7 +79,6 @@ a:hover {
 }
 
 .hamburger-icon {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -234,7 +232,6 @@ section {
   color: #333;
 }
 
-
 /* ICONS */
 
 .icon {
@@ -354,7 +351,6 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-
 }
 
 .skills-details-container {
@@ -390,28 +386,57 @@ article .icon {
 
 #projects {
   position: relative;
+  padding: 3rem 0; /* Increased padding for better spacing from the heading */
+}
+
+.projects-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Center the items */
+  gap: 3rem; /* Space between projects */
+  margin-top: 3rem; /* Added margin to bring down the first row */
 }
 
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  border-radius: 1rem; /* Rounded corners */
+  padding: 1rem; /* Padding for content spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  flex: 0 1 calc(32% - 2rem); /* Adjust width to increase box size, maintain spacing */
+  max-width: 450px; /* Optional: maximum width for project cards */
+  height: 400px; /* Increased height for a larger appearance */
+  margin-bottom: 2rem; /* Added margin for vertical spacing between projects */
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 1rem; /* Reduced radius for a softer look */
+  width: 100%; /* Ensures image fills the container */
+  height: auto; /* Maintains aspect ratio */
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 2rem 0; /* Increased margin for title spacing */
   color: black;
+  font-size: 1.5rem; /* Increased font size for better readability */
+  text-align: center; /* Centered title for better alignment */
 }
 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  padding: 0.5rem 1rem; /* Added padding for button */
+  border-radius: 1rem; /* Rounded button edges */
+  transition: background-color 0.3s ease; /* Added transition for hover effect */
 }
+
+.project-btn:hover {
+  background-color: rgb(14, 13, 13); /* Light hover effect */
+}
+
+
+
+
 
 /* CONTACT */
 
